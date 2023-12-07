@@ -1,0 +1,132 @@
+@media only screen and (max-width: 1025px) {
+  .slivers {
+    align-items: center;
+  }
+  .imgborder {
+    width: 300px;
+    height: 300px;
+  }
+  .imgborder .img {
+    width: 230px;
+    height: 230px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .contentArea .contentBox {
+    color: white;
+    width: 346px;
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .menu {
+    position: fixed;
+    width: 30%;
+    z-index: 3;
+    background: #00073a;
+    height: 100%;
+    transition: all 0.3s;
+    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .addSideMenu {
+    transform: scaleX(1);
+    visibility: visible;
+  }
+
+  span.arrowRight {
+    transform: rotate(74deg);
+    margin: -7px 0;
+    -webkit-transform: rotate(74deg);
+    -moz-transform: rotate(74deg);
+    -ms-transform: rotate(74deg);
+    -o-transform: rotate(74deg);
+  }
+
+  span.arrowLift {
+    transform: rotate(103deg);
+    margin: 7px 0;
+  }
+  span.arrowmeddile {
+    transform: rotate(74deg);
+    margin-top: -0.4px;
+  }
+  .menu .mobileMenu {
+    margin-left: 93px;
+    background: white;
+    display: block;
+  }
+  .mobileMenu {
+    display: block;
+  }
+
+  .menu .mobileMenu span.arrowLift {
+    transform: rotate(153deg);
+    top: -8px;
+    right: 8px;
+  }
+
+  .menu .mobileMenu span.arrowRight {
+    transform: rotate(-153deg);
+    top: 6px;
+    right: 9px;
+  }
+  .menu .mobileMenu:is(.arrowLift .arrowRight) {
+    color: #00073a;
+  }
+
+  .menu .mobileMenu .arrowLift,
+  .menu .mobileMenu .arrowRight {
+    color: #00073a;
+  }
+
+  .menuArea {
+    justify-content: flex-start;
+    height: 100%;
+    flex-direction: column;
+  }
+  ul.item {
+    flex-direction: column;
+  }
+  ul.item li {
+    list-style: none;
+    display: block;
+    padding: 16px 0px;
+  }
+  .logo {
+    margin-top: 20px;
+  }
+  .ThemeMode {
+    margin-top: 20px;
+  }
+  .slivers {
+    background: linear-gradient(180deg, white 34%, #00073a 20%);
+
+    justify-content: space-evenly;
+    .contentArea .contentBox {
+      color: white;
+      width: 306px;
+      font-size: 13px;
+    }
+    flex-direction: column;
+  }
+  .removeSideMenu {
+    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+}
+@media only screen and (max-width: 429px) {
+  .slivers {
+    background: linear-gradient(180deg, white 34%, rgb(0, 7, 58) 20%);
+
+    justify-content: space-evenly;
+    .contentArea .contentBox {
+      color: white;
+      width: 306px;
+      font-size: 13px;
+    }
+    flex-direction: column;
+  }
+}
